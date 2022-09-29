@@ -1,15 +1,15 @@
-# pbs – prosazhin base styles
+# pbstyles – prosazhin base styles
 
 Basic styles for quick prototyping. Includes breakpoints, typography, color palette, animations, rounds, strokes, and shadows.
 
 ## Import CSS
 
-<code>@import 'pbs/styles/css';</code>
+<code>@import 'pbstyles/styles/css';</code>
 
 ## Import LESS
 
-<code>@import 'pbs/styles/less';</code>
+<code>@import 'pbstyles/styles/less';</code>
 
 ## Import SCSS
 
-<code>@import 'pbs/styles/scss';</code>
+<code>@import 'pbstyles/styles/scss';</code>

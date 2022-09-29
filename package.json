@@ -1,8 +1,8 @@
 {
-  "name": "pbs",
+  "name": "pbstyles",
   "version": "1.0.0",
   "author": "Евгений Сажин <prosazhin@yandexru> (https://prosazhin.ru)",
-  "repository": "git@github.com:prosazhin/pbs.git",
+  "repository": "git@github.com:prosazhin/pbstyles.git",
   "license": "MIT",
   "devDependencies": {
     "style-dictionary": "^3.7.1"
