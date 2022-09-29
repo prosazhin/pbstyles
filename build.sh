@@ -7,17 +7,27 @@ echo "@import 'variables.css';" >> ./styles/css/index.css
 echo "@import 'variables.less';" >> ./styles/less/index.less
 echo "@import 'variables.scss';" >> ./styles/scss/index.scss
 
-mixin_dir=./styles/scss/mixin
+cd ./styles/scss
+
+mixin_dir=./mixin
 for entry in "$mixin_dir"/*
 do
-  echo "@import '"$entry"';" >> ./styles/scss/index.scss
+  echo "@import '"$entry"';" >> ./index.scss
 done
 
-mixin_dir=./styles/less/mixin
+cd ..
+cd ..
+
+cd ./styles/less
+
+mixin_dir=./mixin
 for entry in "$mixin_dir"/*
 do
-  echo "@import '"$entry"';" >> ./styles/less/index.less
+  echo "@import '"$entry"';" >> ./index.less
 done
+
+cd ..
+cd ..
 
 echo CSS Files:
 cat ./styles/scss/index.css
