@@ -1,0 +1,30 @@
+{
+  "color": {
+    "border": {
+      "primary": {
+        "main": {
+          "value": "{color.palette.blue_gray.100}"
+        },
+        "light": {
+          "value": "{color.palette.blue_gray.50}"
+        }
+      },
+      "accent": {
+        "main": {
+          "value": "{color.palette.blue_accent.200}"
+        },
+        "light": {
+          "value": "{color.palette.blue.100}"
+        }
+      },
+      "danger": {
+        "main": {
+          "value": "{color.palette.red_accent.200}"
+        },
+        "light": {
+          "value": "{color.palette.red.100}"
+        }
+      }
+    }
+  }
+}

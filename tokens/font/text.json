@@ -1,0 +1,22 @@
+{
+  "font": {
+    "text": {
+      "1": {
+        "size": { "value": "24px" },
+        "height": { "value": "36px" }
+      },
+      "2": {
+        "size": { "value": "20px" },
+        "height": { "value": "28px" }
+      },
+      "3": {
+        "size": { "value": "16px" },
+        "height": { "value": "24px" }
+      },
+      "4": {
+        "size": { "value": "12px" },
+        "height": { "value": "16px" }
+      }
+    }
+  }
+}

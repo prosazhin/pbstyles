@@ -1,0 +1,26 @@
+{
+  "screen": {
+    "xl": {
+      "value": "1441px"
+    },
+    "l": {
+      "max": {
+        "value": "1440px"
+      },
+      "min": {
+        "value": "921px"
+      }
+    },
+    "m": {
+      "max": {
+        "value": "920px"
+      },
+      "min": {
+        "value": "769px"
+      }
+    },
+    "s": {
+      "value": "768px"
+    }
+  }
+}
