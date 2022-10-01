@@ -2,56 +2,52 @@
 
 @mixin headline_1 {
   font-style: $font_style;
-  font-weight: $font_bold;
+  font-weight: $font_weight_bold;
   font-size: $font_headline_1_size;
   line-height: $font_headline_1_height;
 }
 
 @mixin headline_2 {
   font-style: $font_style;
-  font-weight: $font_bold;
+  font-weight: $font_weight_bold;
   font-size: $font_headline_2_size;
   line-height: $font_headline_2_height;
 }
 
 @mixin headline_3 {
   font-style: $font_style;
-  font-weight: $font_bold;
+  font-weight: $font_weight_bold;
   font-size: $font_headline_3_size;
   line-height: $font_headline_3_height;
 }
 
 @mixin headline_4 {
   font-style: $font_style;
-  font-weight: $font_bold;
+  font-weight: $font_weight_bold;
   font-size: $font_headline_4_size;
   line-height: $font_headline_4_height;
 }
 
 @mixin text_1 {
   font-style: $font_style;
-  font-weight: $font_normal;
   font-size: $font_text_1_size;
   line-height: $font_text_1_height;
 }
 
 @mixin text_2 {
   font-style: $font_style;
-  font-weight: $font_normal;
   font-size: $font_text_2_size;
   line-height: $font_text_2_height;
 }
 
 @mixin text_3 {
   font-style: $font_style;
-  font-weight: $font_normal;
   font-size: $font_text_3_size;
   line-height: $font_text_3_height;
 }
 
 @mixin text_4 {
   font-style: $font_style;
-  font-weight: $font_normal;
   font-size: $font_text_4_size;
   line-height: $font_text_4_height;
 }

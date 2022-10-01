@@ -30,10 +30,10 @@ cd ..
 cd ..
 
 echo CSS Files:
-cat ./styles/scss/index.css
+cat ./styles/css/index.css
 
 echo LESS Files:
-cat ./styles/scss/index.less
+cat ./styles/less/index.less
 
 echo SCSS Files:
 cat ./styles/scss/index.scss
