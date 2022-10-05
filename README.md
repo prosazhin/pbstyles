@@ -2,14 +2,41 @@
 
 Basic styles for quick prototyping. Includes breakpoints, typography, color palette, animations, rounds, strokes, and shadows.
 
-## Import CSS
+## CSS
+
+Package contains only a basic set of variables in the form of CSS Variables.
 
 <code>@import 'pbstyles/styles/css';</code>
 
-## Import LESS
+- Color palette
+- Semantic color tokens for text, strokes, and backgrounds
+- Typography
+- Shadows
+- Strokes
+- Corner rounding
+- Screen sizes
+- Spaces
+
+## LESS
+
+Package contains LESS variables and mixins.
 
 <code>@import 'pbstyles/styles/less';</code>
 
-## Import SCSS
+- Basic set of variables
+- Mixins for animation
+- Mixins for typography
+- Mixins for shadow
+- Mixins for breakpoints
+
+## SCSS
+
+Package contains SCSS variables and mixins.
 
 <code>@import 'pbstyles/styles/scss';</code>
+
+- Basic set of variables
+- Mixins for animation
+- Mixins for typography
+- Mixins for shadow
+- Mixins for breakpoints
