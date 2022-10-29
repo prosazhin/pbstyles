@@ -2,6 +2,10 @@
 
 Basic styles for quick prototyping. Includes breakpoints, typography, color palette, animations, rounds, strokes, and shadows.
 
+## Install
+
+<code>yarn add pbstyles</code>
+
 ## CSS
 
 Package contains only a basic set of variables in the form of CSS Variables.
