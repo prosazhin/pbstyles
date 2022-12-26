@@ -1,31 +1,39 @@
 {
   "font": {
     "family": {
-      "value": "'Inter', sans-serif"
+      "value": "'Inter', sans-serif",
+      "type": "font"
     },
     "style": {
-      "value": "normal"
+      "value": "normal",
+      "type": "font"
     },
     "decoration": {
       "none": {
-        "value": "none"
+        "value": "none",
+        "type": "font"
       },
       "underline": {
-        "value": "underline"
+        "value": "underline",
+        "type": "font"
       },
       "strike": {
-        "value": "line-through"
+        "value": "line-through",
+        "type": "font"
       }
     },
     "weight": {
       "regular": {
-        "value": 400
+        "value": 400,
+        "type": "font"
       },
       "medium": {
-        "value": 600
+        "value": 600,
+        "type": "font"
       },
       "bold": {
-        "value": 700
+        "value": 700,
+        "type": "font"
       }
     }
   }

@@ -13,13 +13,11 @@ Package contains only a basic set of variables in the form of CSS Variables.
 <code>@import 'pbstyles/styles/css';</code>
 
 - Color palette
-- Semantic color tokens for text, strokes, and backgrounds
+- Semantic color tokens
 - Typography
 - Shadows
-- Strokes
-- Corner rounding
+- Border rounding
 - Screen sizes
-- Spaces
 
 ## LESS
 
@@ -30,7 +28,6 @@ Package contains LESS variables and mixins.
 - Basic set of variables
 - Mixins for animation
 - Mixins for typography
-- Mixins for shadow
 - Mixins for breakpoints
 
 ## SCSS
@@ -42,5 +39,12 @@ Package contains SCSS variables and mixins.
 - Basic set of variables
 - Mixins for animation
 - Mixins for typography
-- Mixins for shadow
 - Mixins for breakpoints
+
+## TailwindCSS Theme
+
+Package contains TailwindCSS Theme.
+
+<code>const theme = require('@pbstyles/styles/tailwindcss');</code>
+
+- Basic set of variables

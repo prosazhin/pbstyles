@@ -7,25 +7,25 @@
 }
 
 .large_screen(@content) {
-  @media all and (min-width: @screen_l_min) and (max-width: @screen_l_max) {
+  @media all and (min-width: @screen_lg_min) and (max-width: @screen_lg_max) {
     @content;
   }
 }
 
 .middle_screen(@content) {
-  @media all and (min-width: @screen_m_min) and (max-width: @screen_m_max) {
+  @media all and (min-width: @screen_md_min) and (max-width: @screen_md_max) {
     @content;
   }
 }
 
 .small_screen(@content) {
-  @media all and (max-width: @screen_s) {
+  @media all and (max-width: @screen_sm) {
     @content;
   }
 }
 
 .not_small_screen(@content) {
-  @media all and (min-width: @screen_m_min) {
+  @media all and (min-width: @screen_md_min) {
     @content;
   }
 }

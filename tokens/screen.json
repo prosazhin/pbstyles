@@ -1,26 +1,32 @@
 {
   "screen": {
     "xl": {
-      "value": "1441px"
+      "value": "1441px",
+      "type": "screen"
     },
-    "l": {
+    "lg": {
       "max": {
-        "value": "1440px"
+        "value": "1440px",
+        "type": "screen"
       },
       "min": {
-        "value": "921px"
+        "value": "921px",
+        "type": "screen"
       }
     },
-    "m": {
+    "md": {
       "max": {
-        "value": "920px"
+        "value": "920px",
+        "type": "screen"
       },
       "min": {
-        "value": "769px"
+        "value": "769px",
+        "type": "screen"
       }
     },
-    "s": {
-      "value": "768px"
+    "sm": {
+      "value": "768px",
+      "type": "screen"
     }
   }
 }

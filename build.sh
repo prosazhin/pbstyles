@@ -37,3 +37,7 @@ cat ./styles/less/index.less
 
 echo SCSS Files:
 cat ./styles/scss/index.scss
+
+echo Build TailwindCSS Theme
+node ./styles/tailwindcss/build.js
+cat ./styles/tailwindcss/index.js

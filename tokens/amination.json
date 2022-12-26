@@ -1,5 +1,6 @@
 {
   "amination": {
-    "value": "all 0.2s ease-in-out"
+    "value": "all 0.2s ease-in-out",
+    "type": "amination"
   }
 }

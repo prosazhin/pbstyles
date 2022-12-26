@@ -1,0 +1,28 @@
+{
+  "radius": {
+    "none": {
+      "value": "0px",
+      "type": "radius"
+    },
+    "sm": {
+      "value": "4px",
+      "type": "radius"
+    },
+    "md": {
+      "value": "8px",
+      "type": "radius"
+    },
+    "lg": {
+      "value": "16px",
+      "type": "radius"
+    },
+    "xl": {
+      "value": "24px",
+      "type": "radius"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "radius"
+    }
+  }
+}

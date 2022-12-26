@@ -34,5 +34,16 @@ module.exports = {
         },
       ],
     },
+    js: {
+      transformGroup: 'js',
+      transforms: ['name/cti/snake'],
+      buildPath: 'styles/tailwindcss/',
+      files: [
+        {
+          format: 'javascript/module',
+          destination: 'variables.js',
+        },
+      ],
+    },
   },
 };
