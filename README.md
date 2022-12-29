@@ -45,7 +45,7 @@ Package contains SCSS variables and mixins.
 
 Package contains TailwindCSS Theme.
 
-<code>
+```javascript
 const theme = require('pbstyles/styles/tailwindcss');
 
 module.exports = {
@@ -55,6 +55,6 @@ module.exports = {
   },
   ...
 };
-</code>
+```
 
 - Basic set of variables
