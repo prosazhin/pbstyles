@@ -4,13 +4,13 @@ Basic styles for quick prototyping. Includes breakpoints, typography, color pale
 
 ## Install
 
-<code>yarn add pbstyles</code>
+```yarn add pbstyles```
 
 ## CSS
 
 Package contains only a basic set of variables in the form of CSS Variables.
 
-<code>@import 'pbstyles/styles/css';</code>
+```@import 'pbstyles/styles/css';```
 
 - Color palette
 - Semantic color tokens
@@ -23,7 +23,7 @@ Package contains only a basic set of variables in the form of CSS Variables.
 
 Package contains LESS variables and mixins.
 
-<code>@import 'pbstyles/styles/less';</code>
+```@import 'pbstyles/styles/less';```
 
 - Basic set of variables
 - Mixins for animation
@@ -34,7 +34,7 @@ Package contains LESS variables and mixins.
 
 Package contains SCSS variables and mixins.
 
-<code>@import 'pbstyles/styles/scss';</code>
+```@import 'pbstyles/styles/scss';```
 
 - Basic set of variables
 - Mixins for animation
