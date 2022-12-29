@@ -1,32 +1,42 @@
 {
   "screen": {
     "xl": {
-      "value": "1441px",
-      "type": "screen"
+      "min": {
+        "value": "1441px",
+        "type": "screen"
+      }
     },
     "lg": {
-      "max": {
-        "value": "1440px",
-        "type": "screen"
-      },
       "min": {
         "value": "921px",
+        "type": "screen"
+      },
+      "max": {
+        "value": "1440px",
         "type": "screen"
       }
     },
     "md": {
-      "max": {
-        "value": "920px",
-        "type": "screen"
-      },
       "min": {
         "value": "769px",
+        "type": "screen"
+      },
+      "max": {
+        "value": "920px",
         "type": "screen"
       }
     },
     "sm": {
-      "value": "768px",
-      "type": "screen"
+      "max": {
+        "value": "768px",
+        "type": "screen"
+      }
+    },
+    "desktop": {
+      "min": {
+        "value": "769px",
+        "type": "screen"
+      }
     }
   }
 }

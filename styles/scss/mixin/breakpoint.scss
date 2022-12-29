@@ -1,31 +1,31 @@
 @import '../variables.scss';
 
-@mixin big_screen {
-  @media all and (min-width: $screen_xl) {
+@mixin xl {
+  @media all and (min-width: $screen_xl_min) {
     @content;
   }
 }
 
-@mixin large_screen {
+@mixin lg {
   @media all and (min-width: $screen_lg_min) and (max-width: $screen_lg_max) {
     @content;
   }
 }
 
-@mixin middle_screen {
+@mixin md {
   @media all and (min-width: $screen_md_min) and (max-width: $screen_md_max) {
     @content;
   }
 }
 
-@mixin small_screen {
-  @media all and (max-width: $screen_sm) {
+@mixin sm {
+  @media all and (max-width: $screen_sm_max) {
     @content;
   }
 }
 
-@mixin not_small_screen {
-  @media all and (min-width: $screen_md_min) {
+@mixin desktop {
+  @media all and (min-width: $screen_desktop_min) {
     @content;
   }
 }

@@ -1,31 +1,31 @@
 @import '../variables.less';
 
-.big_screen(@content) {
-  @media all and (min-width: @screen_xl) {
+.xl(@content) {
+  @media all and (min-width: @screen_xl_min) {
     @content;
   }
 }
 
-.large_screen(@content) {
+.lg(@content) {
   @media all and (min-width: @screen_lg_min) and (max-width: @screen_lg_max) {
     @content;
   }
 }
 
-.middle_screen(@content) {
+.md(@content) {
   @media all and (min-width: @screen_md_min) and (max-width: @screen_md_max) {
     @content;
   }
 }
 
-.small_screen(@content) {
-  @media all and (max-width: @screen_sm) {
+.sm(@content) {
+  @media all and (max-width: @screen_sm_max) {
     @content;
   }
 }
 
-.not_small_screen(@content) {
-  @media all and (min-width: @screen_md_min) {
+.desktop(@content) {
+  @media all and (min-width: @screen_desktop_min) {
     @content;
   }
 }

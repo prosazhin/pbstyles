@@ -14,21 +14,8 @@ const getTokensObject = (data) => {
   }, {})
 };
 
-const getNoNestedObject = (data) => {
-  return Object.keys(data).reduce((acc, cur) => {
-    if (typeof data[cur] === 'object') {
-      return { ...acc, ...Object.fromEntries(
-        Object.keys(data[cur]).map((item) => [
-          `${cur}-${item}`, data[cur][item]
-        ])
-      )};
-    }
-    return { ...acc, [cur]: data[cur] };
-  }, {})
-};
-
 const result = {
-  screens: getNoNestedObject(getTokensObject(variables.screen)),
+  screens: getTokensObject(variables.screen),
   colors: getTokensObject(variables.color),
   fontSize: ['h', 't', 'tm'].reduce((acc, cur) => {
     return { ...acc, ...Object.fromEntries(
