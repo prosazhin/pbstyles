@@ -1,16 +1,17 @@
 {
   "name": "pbstyles",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Евгений Сажин <prosazhin@yandexru> (https://prosazhin.ru)",
   "repository": "git@github.com:prosazhin/pbstyles.git",
   "license": "MIT",
+  "scripts": {
+    "build": "style-dictionary build && bash ./build.sh",
+    "publish": "npm login && npm publish"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "style-dictionary": "^3.7.1"
-  },
-  "scripts": {
-    "build-tokens": "style-dictionary build",
-    "build-index": "bash ./build.sh",
-    "build": "npm run build-tokens && npm run build-index",
-    "publish": "npm login && npm publish"
   }
 }

@@ -1,23 +1,24 @@
 const fs = require('fs');
+const kebabCase = require('lodash/kebabCase');
 const variables = require('./variables.js');
 
 const getTokensObject = (data) => {
   return Object.keys(data).reduce((acc, cur) => {
     if (data[cur].hasOwnProperty('value')) {
-      return { ...acc, [cur]: data[cur].value };
+      return { ...acc, [kebabCase(cur)]: data[cur].value };
     }
     return { ...acc,
-      [cur]: Object.fromEntries(Object.values(data[cur]).map((item) => [
-        item.path[item.path.length - 1], item.value
+      [kebabCase(cur)]: Object.fromEntries(Object.values(data[cur]).map((item) => [
+        kebabCase(item.path[item.path.length - 1]), item.value
       ]))
     };
   }, {})
 };
 
-const result = {
-  screens: getTokensObject(variables.screen),
-  colors: getTokensObject(variables.color),
-  fontSize: ['h', 't', 'tm'].reduce((acc, cur) => {
+fs.writeFileSync('./styles/tailwindcss/index.js', `module.exports = {
+  screens: ${JSON.stringify(getTokensObject(variables.screen))},
+  colors: ${JSON.stringify(getTokensObject(variables.color))},
+  fontSize: ${JSON.stringify(['h', 't', 'tm'].reduce((acc, cur) => {
     return { ...acc, ...Object.fromEntries(
       Object.keys(variables.font[cur]).map((item) => [
         `${cur}${item}`, [variables.font[cur][item].size.value, {
@@ -26,17 +27,9 @@ const result = {
         }]
       ])
     )};
-  }, {}),
-  borderRadius: getTokensObject(variables.radius),
-  boxShadow: getTokensObject(variables.shadow),
-};
-
-fs.writeFileSync('./styles/tailwindcss/index.js', `module.exports = {
-  screens: ${JSON.stringify(result.screens)},
-  colors: ${JSON.stringify(result.colors)},
-  fontSize: ${JSON.stringify(result.fontSize)},
-  borderRadius: ${JSON.stringify(result.borderRadius)},
+  }, {}))},
+  borderRadius: ${JSON.stringify(getTokensObject(variables.radius))},
   extend: {
-    boxShadow: ${JSON.stringify(result.boxShadow)},
+    boxShadow: ${JSON.stringify(getTokensObject(variables.shadow))},
   }
 }`);
