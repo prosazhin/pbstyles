@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 30 Jan 2023 15:17:45 GMT
+ * Generated on Fri, 03 Feb 2023 09:10:55 GMT
  */
 
 module.exports = {
@@ -3083,12 +3083,12 @@ module.exports = {
       ]
     },
     "lg": {
-      "value": "16px",
+      "value": "12px",
       "type": "radius",
       "filePath": "tokens/radius.json",
       "isSource": true,
       "original": {
-        "value": "16px",
+        "value": "12px",
         "type": "radius"
       },
       "name": "radius_lg",
@@ -3099,6 +3099,22 @@ module.exports = {
       ]
     },
     "xl": {
+      "value": "16px",
+      "type": "radius",
+      "filePath": "tokens/radius.json",
+      "isSource": true,
+      "original": {
+        "value": "16px",
+        "type": "radius"
+      },
+      "name": "radius_xl",
+      "attributes": {},
+      "path": [
+        "radius",
+        "xl"
+      ]
+    },
+    "xxl": {
       "value": "24px",
       "type": "radius",
       "filePath": "tokens/radius.json",
@@ -3107,11 +3123,11 @@ module.exports = {
         "value": "24px",
         "type": "radius"
       },
-      "name": "radius_xl",
+      "name": "radius_xxl",
       "attributes": {},
       "path": [
         "radius",
-        "xl"
+        "xxl"
       ]
     },
     "full": {
