@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 03 Feb 2023 09:10:55 GMT
+ * Generated on Sat, 08 Apr 2023 14:34:29 GMT
  */
 
 module.exports = {
@@ -3033,116 +3033,132 @@ module.exports = {
       }
     }
   },
-  "radius": {
+  "rounded": {
     "none": {
       "value": "0px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "0px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_none",
+      "name": "rounded_none",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "none"
       ]
     },
-    "sm": {
+    "xs": {
       "value": "4px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "4px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_sm",
+      "name": "rounded_xs",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
+        "xs"
+      ]
+    },
+    "sm": {
+      "value": "6px",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
+      "isSource": true,
+      "original": {
+        "value": "6px",
+        "type": "rounded"
+      },
+      "name": "rounded_sm",
+      "attributes": {},
+      "path": [
+        "rounded",
         "sm"
       ]
     },
     "md": {
       "value": "8px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "8px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_md",
+      "name": "rounded_md",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "md"
       ]
     },
     "lg": {
       "value": "12px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "12px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_lg",
+      "name": "rounded_lg",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "lg"
       ]
     },
     "xl": {
       "value": "16px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "16px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_xl",
+      "name": "rounded_xl",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "xl"
       ]
     },
     "xxl": {
       "value": "24px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "24px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_xxl",
+      "name": "rounded_xxl",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "xxl"
       ]
     },
     "full": {
       "value": "9999px",
-      "type": "radius",
-      "filePath": "tokens/radius.json",
+      "type": "rounded",
+      "filePath": "tokens/rounded.json",
       "isSource": true,
       "original": {
         "value": "9999px",
-        "type": "radius"
+        "type": "rounded"
       },
-      "name": "radius_full",
+      "name": "rounded_full",
       "attributes": {},
       "path": [
-        "radius",
+        "rounded",
         "full"
       ]
     }

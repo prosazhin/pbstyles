@@ -1,32 +1,36 @@
 {
-  "radius": {
+  "rounded": {
     "none": {
       "value": "0px",
-      "type": "radius"
+      "type": "rounded"
+    },
+    "xs": {
+      "value": "4px",
+      "type": "rounded"
     },
     "sm": {
-      "value": "4px",
-      "type": "radius"
+      "value": "6px",
+      "type": "rounded"
     },
     "md": {
       "value": "8px",
-      "type": "radius"
+      "type": "rounded"
     },
     "lg": {
       "value": "12px",
-      "type": "radius"
+      "type": "rounded"
     },
     "xl": {
       "value": "16px",
-      "type": "radius"
+      "type": "rounded"
     },
     "xxl": {
       "value": "24px",
-      "type": "radius"
+      "type": "rounded"
     },
     "full": {
       "value": "9999px",
-      "type": "radius"
+      "type": "rounded"
     }
   }
 }

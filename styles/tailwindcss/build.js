@@ -28,7 +28,7 @@ fs.writeFileSync('./styles/tailwindcss/index.js', `module.exports = {
       ])
     )};
   }, {}))},
-  borderRadius: ${JSON.stringify(getTokensObject(variables.radius))},
+  borderRadius: ${JSON.stringify(getTokensObject(variables.rounded))},
   extend: {
     boxShadow: ${JSON.stringify(getTokensObject(variables.shadow))},
   }
