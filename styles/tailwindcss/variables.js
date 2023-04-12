@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 08 Apr 2023 14:34:29 GMT
+ * Generated on Wed, 12 Apr 2023 10:39:04 GMT
  */
 
 module.exports = {
@@ -367,6 +367,76 @@ module.exports = {
           "color",
           "danger",
           "lighter"
+        ]
+      }
+    },
+    "outline": {
+      "primary": {
+        "value": "#DDEAFF",
+        "type": "color",
+        "filePath": "tokens/color/base.json",
+        "isSource": true,
+        "original": {
+          "value": "#DDEAFF",
+          "type": "color"
+        },
+        "name": "color_outline_primary",
+        "attributes": {},
+        "path": [
+          "color",
+          "outline",
+          "primary"
+        ]
+      },
+      "secondary": {
+        "value": "#DFE2E3",
+        "type": "color",
+        "filePath": "tokens/color/base.json",
+        "isSource": true,
+        "original": {
+          "value": "#DFE2E3",
+          "type": "color"
+        },
+        "name": "color_outline_secondary",
+        "attributes": {},
+        "path": [
+          "color",
+          "outline",
+          "secondary"
+        ]
+      },
+      "success": {
+        "value": "#D6F6E3",
+        "type": "color",
+        "filePath": "tokens/color/base.json",
+        "isSource": true,
+        "original": {
+          "value": "#D6F6E3",
+          "type": "color"
+        },
+        "name": "color_outline_success",
+        "attributes": {},
+        "path": [
+          "color",
+          "outline",
+          "success"
+        ]
+      },
+      "danger": {
+        "value": "#FFE3E3",
+        "type": "color",
+        "filePath": "tokens/color/base.json",
+        "isSource": true,
+        "original": {
+          "value": "#FFE3E3",
+          "type": "color"
+        },
+        "name": "color_outline_danger",
+        "attributes": {},
+        "path": [
+          "color",
+          "outline",
+          "danger"
         ]
       }
     },

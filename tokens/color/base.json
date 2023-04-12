@@ -89,6 +89,24 @@
         "value": "{color.red.50}",
         "type": "color"
       }
+    },
+    "outline": {
+      "primary": {
+        "value": "#DDEAFF",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "#DFE2E3",
+        "type": "color"
+      },
+      "success": {
+        "value": "#D6F6E3",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#FFE3E3",
+        "type": "color"
+      }
     }
   }
 }
