@@ -1,7 +1,7 @@
 {
   "name": "pbstyles",
   "version": "1.2.1",
-  "description": "Styles library",
+  "description": "Basic styles for quick prototyping",
   "author": "Евгений Сажин <prosazhin@yandexru> (https://prosazhin.ru)",
   "repository": {
     "type": "git",
