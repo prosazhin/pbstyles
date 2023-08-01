@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Apr 2023 10:39:04 GMT
+ * Generated on Tue, 01 Aug 2023 21:45:42 GMT
  */
 
 :root {
@@ -25,10 +25,10 @@
   --color_danger_main: #ff5252;
   --color_danger_light: #ffcdd2;
   --color_danger_lighter: #ffebee;
-  --color_outline_primary: #DDEAFF;
-  --color_outline_secondary: #DFE2E3;
-  --color_outline_success: #D6F6E3;
-  --color_outline_danger: #FFE3E3;
+  --color_outline_primary: #ddeaff;
+  --color_outline_secondary: #dfe2e3;
+  --color_outline_success: #d6f6e3;
+  --color_outline_danger: #ffe3e3;
   --color_black: #000000;
   --color_white: #ffffff;
   --color_transparent: transparent;
@@ -202,5 +202,6 @@
   --shadow_xl: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1);
   --shadow_xxl: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
   --shadow_xxxl: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
-  --shadow_xxxxl: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  --shadow_xxxxl: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
 }

@@ -1,17 +1,38 @@
 {
   "name": "pbstyles",
   "version": "1.2.1",
+  "description": "Styles library",
   "author": "Евгений Сажин <prosazhin@yandexru> (https://prosazhin.ru)",
-  "repository": "git@github.com:prosazhin/pbstyles.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prosazhin/pbstyles.git"
+  },
   "license": "MIT",
+  "files": [
+    "styles"
+  ],
   "scripts": {
     "build": "style-dictionary build && bash ./build.sh",
-    "publish": "npm login && npm publish"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "publish": "npm login && npm publish",
+    "format": "prettier --write styles",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "lodash": "^4.17.21",
+    "prettier": "^3.0.0",
     "style-dictionary": "^3.7.1"
-  }
+  },
+  "lint-staged": {
+    "*.{md,mdx,css,scss,less,js}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "css",
+    "less",
+    "scss",
+    "tailwindcss"
+  ]
 }
