@@ -1,41 +1,47 @@
 {
   "screen": {
+    "desktop": {
+      "min": {
+        "value": "769px",
+        "mixin": "desktop"
+      }
+    },
+    "mobile": {
+      "max": {
+        "value": "768px",
+        "mixin": "mobile"
+      }
+    },
     "xl": {
       "min": {
         "value": "1441px",
-        "type": "screen"
+        "mixin": "xl"
       }
     },
     "lg": {
-      "min": {
-        "value": "921px",
-        "type": "screen"
-      },
       "max": {
         "value": "1440px",
-        "type": "screen"
+        "mixin": "lg"
+      },
+      "min": {
+        "value": "921px",
+        "mixin": "lg"
       }
     },
     "md": {
-      "min": {
-        "value": "769px",
-        "type": "screen"
-      },
       "max": {
         "value": "920px",
-        "type": "screen"
+        "mixin": "md"
+      },
+      "min": {
+        "value": "769px",
+        "mixin": "md"
       }
     },
     "sm": {
       "max": {
         "value": "768px",
-        "type": "screen"
-      }
-    },
-    "desktop": {
-      "min": {
-        "value": "769px",
-        "type": "screen"
+        "mixin": "sm"
       }
     }
   }

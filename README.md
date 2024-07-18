@@ -1,60 +1,88 @@
-# pbstyles – prosazhin base styles
+# pbstyles
 
-Basic styles for quick prototyping. Includes breakpoints, typography, color palette, animations, rounds, strokes, and shadows.
+[Figma community](https://www.figma.com/community/file/1213609862805339771/pbstyles) | [Behance](https://www.behance.net/gallery/162935391/pbstyles)
 
-## Install
+## prosazhin basic styles
 
-```yarn add pbstyles```
+Basic styles for quick prototyping. Includes typography, semantic colors, color palette, basic sizes, containers and columns, breakpoints, border sizes, rounding, opacity, and shadows.
 
-## CSS
+For generating styles, design tokens are used based on the [Style Dictionary](https://github.com/amzn/style-dictionary) package documentation, but extended with mixins thanks to the [Mixin Dictionary](https://github.com/prosazhin/mixin-dictionary) package. For generating a Tailwind Theme, the [Tailwind Dictionary](https://github.com/prosazhin/tailwind-dictionary) package is used.
 
-Package contains only a basic set of variables in the form of CSS Variables.
+## Installation
 
-```@import 'pbstyles/styles/css';```
+```bash
+yarn add pbstyles
+# or
+npm install pbstyles
+```
 
-- Color palette
-- Semantic color tokens
-- Typography
-- Shadows
-- Border rounding
-- Screen sizes
+## Includes
 
-## LESS
+### Basic variables
 
-Package contains LESS variables and mixins.
+| Category              | CSS | LESS | SCSS | Tailwind Theme |
+| :-------------------- | :-- | :--- | :--- | :------------- |
+| Typography            | +   | +    | +    | +              |
+| Semantic colors       | +   | +    | +    | +              |
+| Colors palette        | +   | +    | +    | +              |
+| Basic sizes           | +   | +    | +    | +              |
+| Containers sizes      | +   | +    | +    | +              |
+| Columns               | +   | +    | +    | -              |
+| Border sizes          | +   | +    | +    | +              |
+| Border rounding sizes | +   | +    | +    | +              |
+| Opacity               | +   | +    | +    | +              |
+| Shadows               | +   | +    | +    | +              |
 
-```@import 'pbstyles/styles/less';```
+### Mixins
 
-- Basic set of variables
-- Mixins for animation
-- Mixins for typography
-- Mixins for breakpoints
+| Mixin       | CSS | LESS | SCSS | Tailwind Theme |
+| :---------- | :-- | :--- | :--- | :------------- |
+| Animation   | -   | +    | +    | -              |
+| Typography  | -   | +    | +    | +              |
+| Breakpoints | -   | +    | +    | +              |
 
-## SCSS
+## Usage examples
 
-Package contains SCSS variables and mixins.
+### CSS Variables
 
-```@import 'pbstyles/styles/scss';```
+Package contains only a [basic set of variables](https://github.com/prosazhin/pbstyles/blob/main/styles/css/variables.css).
+At the moment, CSS does not yet have the ability to use mixins.
 
-- Basic set of variables
-- Mixins for animation
-- Mixins for typography
-- Mixins for breakpoints
+```css
+@import 'pbstyles/styles/css';
+```
 
-## TailwindCSS Theme
+### LESS
 
-Package contains TailwindCSS Theme.
+Package contains [basic set of LESS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/less/variables.less).
+
+```less
+@import 'pbstyles/styles/less';
+```
+
+### SCSS
+
+Package contains [basic set of SCSS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/scss/variables.scss).
+
+```scss
+@import 'pbstyles/styles/scss';
+```
+
+### Tailwind Theme
+
+Package contains [Tailwind Theme](https://github.com/prosazhin/pbstyles/blob/main/styles/tailwind-theme/index.js).
 
 ```javascript
-const theme = require('pbstyles/styles/tailwindcss');
+const theme = require('pbstyles/styles/tailwind-theme');
 
 module.exports = {
   ...
   theme: {
     ...theme,
+    extend: {
+      ...theme.extend,
+    },
   },
   ...
 };
 ```
-
-- Basic set of variables

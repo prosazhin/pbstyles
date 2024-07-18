@@ -3,6 +3,7 @@ node_modules
 config.js
 tokens
 build
+src
 
 # local env files
 .env

@@ -1,38 +1,70 @@
 {
   "name": "pbstyles",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "Basic styles for quick prototyping",
-  "author": "Евгений Сажин <prosazhin@yandexru> (https://prosazhin.ru)",
+  "license": "MIT",
+  "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.ru)",
+  "keywords": [
+    "style",
+    "css",
+    "less",
+    "scss",
+    "tailwind",
+    "tailwind-theme",
+    "theme",
+    "design",
+    "tokens",
+    "tool",
+    "system",
+    "design-tokens",
+    "design-system",
+    "design-tool"
+  ],
+  "homepage": "https://github.com/prosazhin/pbstyles",
   "repository": {
     "type": "git",
     "url": "https://github.com/prosazhin/pbstyles.git"
   },
-  "license": "MIT",
+  "engines": {
+    "node": ">=18.20.3"
+  },
   "files": [
     "styles"
   ],
   "scripts": {
-    "build": "style-dictionary build && bash ./build.sh",
-    "publish": "npm login && npm publish",
+    "build": "npm run build:mixin-dictionary && npm run build:tailwind-dictionary && npm run format",
+    "build:mixin-dictionary": "mixin-dictionary -c './config-mixin-dictionary.json'",
+    "build:tailwind-dictionary": "tailwind-dictionary -c './config-tailwind-dictionary.json'",
+    "lint": "eslint",
     "format": "prettier --write styles",
-    "prepare": "husky install"
+    "prepare": "npx simple-git-hooks"
   },
-  "devDependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "lodash": "^4.17.21",
-    "prettier": "^3.0.0",
-    "style-dictionary": "^3.7.1"
+  "simple-git-hooks": {
+    "pre-commit": "npx --no-install lint-staged --concurrent false",
+    "pre-push": "npm run format",
+    "commit-msg": "npx --no-install commitlint --edit ${1}"
   },
   "lint-staged": {
-    "*.{md,mdx,css,scss,less,js}": [
-      "prettier --write"
+    "*.{md,mdx,css,scss,less,js,json}": "prettier --write",
+    "*.{md,mdx,css,scss,less,js}": "eslint --cache --fix"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
   },
-  "keywords": [
-    "css",
-    "less",
-    "scss",
-    "tailwindcss"
-  ]
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "lint-staged": "^15.2.7",
+    "mixin-dictionary": "^1.1.1",
+    "prettier": "^3.3.2",
+    "simple-git-hooks": "^2.11.1",
+    "tailwind-dictionary": "^1.0.0"
+  }
 }

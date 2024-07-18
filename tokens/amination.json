@@ -1,6 +1,18 @@
 {
   "amination": {
-    "value": "all 0.2s ease-in-out",
-    "type": "amination"
+    "transition": {
+      "transition-property": {
+        "value": "all",
+        "mixin": "transition"
+      },
+      "transition-timing-function": {
+        "value": "ease-in-out",
+        "mixin": "transition"
+      },
+      "transition-duration": {
+        "value": "150ms",
+        "mixin": "transition"
+      }
+    }
   }
 }
