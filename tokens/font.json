@@ -20,6 +20,7 @@
       "24": { "value": "{size.24}" },
       "20": { "value": "{size.20}" },
       "16": { "value": "{size.16}" },
+      "14": { "value": "{size.14}" },
       "12": { "value": "{size.12}" }
     },
     "leading": {
@@ -153,6 +154,20 @@
         "mixin": "t16"
       }
     },
+    "t14": {
+      "font-size": {
+        "value": "{font.size.14}",
+        "mixin": "t14"
+      },
+      "line-height": {
+        "value": "{font.leading.normal}",
+        "mixin": "t14"
+      },
+      "font-weight": {
+        "value": "{font.weight.regular}",
+        "mixin": "t14"
+      }
+    },
     "t12": {
       "font-size": {
         "value": "{font.size.12}",
@@ -221,6 +236,20 @@
       "font-weight": {
         "value": "{font.weight.medium}",
         "mixin": "tm16"
+      }
+    },
+    "tm14": {
+      "font-size": {
+        "value": "{font.size.14}",
+        "mixin": "tm14"
+      },
+      "line-height": {
+        "value": "{font.leading.normal}",
+        "mixin": "tm14"
+      },
+      "font-weight": {
+        "value": "{font.weight.medium}",
+        "mixin": "tm14"
       }
     },
     "tm12": {

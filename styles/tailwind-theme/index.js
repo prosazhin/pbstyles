@@ -4,6 +4,7 @@ module.exports = {
   lineHeight: { none: 1, tight: 1.25, normal: 1.5 },
   fontSize: {
     12: '12px',
+    14: '14px',
     16: '16px',
     20: '20px',
     24: '24px',
@@ -19,11 +20,13 @@ module.exports = {
     t24: ['24px', { lineHeight: 1.5, fontWeight: 400 }],
     t20: ['20px', { lineHeight: 1.5, fontWeight: 400 }],
     t16: ['16px', { lineHeight: 1.5, fontWeight: 400 }],
+    t14: ['14px', { lineHeight: 1.5, fontWeight: 400 }],
     t12: ['12px', { lineHeight: 1.5, fontWeight: 400 }],
     tm32: ['32px', { lineHeight: 1.5, fontWeight: 600 }],
     tm24: ['24px', { lineHeight: 1.5, fontWeight: 600 }],
     tm20: ['20px', { lineHeight: 1.5, fontWeight: 600 }],
     tm16: ['16px', { lineHeight: 1.5, fontWeight: 600 }],
+    tm14: ['14px', { lineHeight: 1.5, fontWeight: 600 }],
     tm12: ['12px', { lineHeight: 1.5, fontWeight: 600 }],
   },
   colors: {
