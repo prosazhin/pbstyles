@@ -31,10 +31,10 @@
       "lighter": { "value": "{color.red.50}" }
     },
     "outline": {
-      "primary": { "value": "#DDEAFF" },
-      "secondary": { "value": "#DFE2E3" },
-      "success": { "value": "#D6F6E3" },
-      "danger": { "value": "#FFE3E3" }
+      "primary": { "value": "rgba(41, 121, 255, 0.2)" },
+      "secondary": { "value": "rgba(55, 71, 79, 0.2)" },
+      "success": { "value": "rgba(0, 200, 83, 0.2)" },
+      "danger": { "value": "rgba(255, 23, 68, 0.2)" }
     }
   }
 }

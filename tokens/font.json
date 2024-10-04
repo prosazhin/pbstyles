@@ -84,6 +84,20 @@
         "mixin": "h24"
       }
     },
+    "h16": {
+      "font-size": {
+        "value": "{font.size.16}",
+        "mixin": "h16"
+      },
+      "line-height": {
+        "value": "{font.leading.tight}",
+        "mixin": "h16"
+      },
+      "font-weight": {
+        "value": "{font.weight.bold}",
+        "mixin": "h16"
+      }
+    },
     "h20": {
       "font-size": {
         "value": "{font.size.20}",

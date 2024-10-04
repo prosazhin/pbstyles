@@ -26,10 +26,10 @@
   --color-danger-main: #ff5252;
   --color-danger-light: #ffcdd2;
   --color-danger-lighter: #ffebee;
-  --color-outline-primary: #ddeaff;
-  --color-outline-secondary: #dfe2e3;
-  --color-outline-success: #d6f6e3;
-  --color-outline-danger: #ffe3e3;
+  --color-outline-primary: rgba(41, 121, 255, 0.2);
+  --color-outline-secondary: rgba(55, 71, 79, 0.2);
+  --color-outline-success: rgba(0, 200, 83, 0.2);
+  --color-outline-danger: rgba(255, 23, 68, 0.2);
   --color-black: #000000;
   --color-white: #ffffff;
   --color-transparent: transparent;
@@ -174,6 +174,9 @@
   --font-h24-font-size: 24px;
   --font-h24-line-height: 1.25;
   --font-h24-font-weight: 700;
+  --font-h16-font-size: 16px;
+  --font-h16-line-height: 1.25;
+  --font-h16-font-weight: 700;
   --font-h20-font-size: 20px;
   --font-h20-line-height: 1.25;
   --font-h20-font-weight: 700;
@@ -251,6 +254,8 @@
   --screen-md-max: 920px;
   --screen-md-min: 769px;
   --screen-sm-max: 768px;
+  --screen-sm-min: 481px;
+  --screen-xs-max: 480px;
   --shadow-xs: 0px 2px 4px -2px rgba(24, 39, 75, 0.12), 0px 4px 4px -2px rgba(24, 39, 75, 0.08);
   --shadow-sm: 0px 4px 6px -4px rgba(24, 39, 75, 0.12), 0px 8px 8px -4px rgba(24, 39, 75, 0.08);
   --shadow-md: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
