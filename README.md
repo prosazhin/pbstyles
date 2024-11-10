@@ -45,7 +45,7 @@ npm install pbstyles
 
 ### CSS Variables
 
-Package contains only a [basic set of variables](https://github.com/prosazhin/pbstyles/blob/main/styles/css/variables.css).
+Package contains only a [basic set of variables](https://github.com/prosazhin/pbstyles/blob/main/styles/css/index.css).
 At the moment, CSS does not yet have the ability to use mixins.
 
 ```css
@@ -54,7 +54,7 @@ At the moment, CSS does not yet have the ability to use mixins.
 
 ### LESS
 
-Package contains [basic set of LESS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/less/variables.less).
+Package contains [basic set of LESS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/less/index.less).
 
 ```less
 @import 'pbstyles/styles/less';
@@ -62,7 +62,7 @@ Package contains [basic set of LESS variables and mixins](https://github.com/pro
 
 ### SCSS
 
-Package contains [basic set of SCSS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/scss/variables.scss).
+Package contains [basic set of SCSS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/scss/index.scss).
 
 ```scss
 @import 'pbstyles/styles/scss';
