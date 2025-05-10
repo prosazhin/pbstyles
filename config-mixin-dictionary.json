@@ -2,5 +2,6 @@
   "platforms": ["css", "less", "scss"],
   "source": ["tokens/**/*.json"],
   "output": "./styles",
-  "mediaAliases": ["screen", "breakpoint"]
+  "mediaAliases": ["screen", "breakpoint"],
+  "keyframesAliases": ["keyframes"]
 }

@@ -1,8 +1,11 @@
 // Do not edit directly, this file was auto-generated.
 
-@amination-transition-transition-property: all;
-@amination-transition-transition-timing-function: ease-in-out;
-@amination-transition-transition-duration: 150ms;
+@animation-show: show 300ms ease-in forwards;
+@animation-hide: hide 200ms ease-out forwards;
+@keyframes-show-from-opacity: 0;
+@keyframes-show-to-opacity: 1;
+@keyframes-hide-from-opacity: 1;
+@keyframes-hide-to-opacity: 0;
 @color-basic-main: #000000;
 @color-basic-light: #78909c;
 @color-basic-lighter: #f5f5f5;
@@ -141,7 +144,7 @@
 @container-1152: 1152px;
 @container-full: 100%;
 @container-aside: 184px;
-@font-family-sans: Inter, sans-serif;
+@font-family-sans: 'Inter', sans-serif;
 @font-decoration-none: none;
 @font-decoration-underline: underline;
 @font-decoration-strike: line-through;
@@ -327,11 +330,20 @@
 @stroke-2: 2px;
 @stroke-4: 4px;
 
-.transition() {
-  transition-property: @amination-transition-transition-property;
-  transition-timing-function: @amination-transition-transition-timing-function;
-  transition-duration: @amination-transition-transition-duration;
+.keyframes(@name, @content) {
+  @keyframes @name {
+    @content();
+  }
+  @-webkit-keyframes @name {
+    @content();
+  }
+  @-moz-keyframes @name {
+    @content();
+  }
 }
+
+.keyframes(show, { from { opacity: @keyframes-show-from-opacity; } to { opacity: @keyframes-show-to-opacity; } });
+.keyframes(hide, { from { opacity: @keyframes-hide-from-opacity; } to { opacity: @keyframes-hide-to-opacity; } });
 .h64() {
   font-size: @font-h64-font-size;
   line-height: @font-h64-line-height;
@@ -422,38 +434,38 @@
   line-height: @font-tm12-line-height;
   font-weight: @font-tm12-font-weight;
 }
-.desktop(@content) {
+.desktop(@rules) {
   @media all and (min-width: @screen-desktop-min) {
-    @content;
+    @rules();
   }
 }
-.mobile(@content) {
+.mobile(@rules) {
   @media all and (max-width: @screen-mobile-max) {
-    @content;
+    @rules();
   }
 }
-.xl(@content) {
+.xl(@rules) {
   @media all and (min-width: @screen-xl-min) {
-    @content;
+    @rules();
   }
 }
-.lg(@content) {
+.lg(@rules) {
   @media all and (max-width: @screen-lg-max) and (min-width: @screen-lg-min) {
-    @content;
+    @rules();
   }
 }
-.md(@content) {
+.md(@rules) {
   @media all and (max-width: @screen-md-max) and (min-width: @screen-md-min) {
-    @content;
+    @rules();
   }
 }
-.sm(@content) {
+.sm(@rules) {
   @media all and (max-width: @screen-sm-max) and (min-width: @screen-sm-min) {
-    @content;
+    @rules();
   }
 }
-.xs(@content) {
+.xs(@rules) {
   @media all and (max-width: @screen-xs-max) {
-    @content;
+    @rules();
   }
 }

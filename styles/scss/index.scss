@@ -1,8 +1,11 @@
 // Do not edit directly, this file was auto-generated.
 
-$amination-transition-transition-property: all;
-$amination-transition-transition-timing-function: ease-in-out;
-$amination-transition-transition-duration: 150ms;
+$animation-show: show 300ms ease-in forwards;
+$animation-hide: hide 200ms ease-out forwards;
+$keyframes-show-from-opacity: 0;
+$keyframes-show-to-opacity: 1;
+$keyframes-hide-from-opacity: 1;
+$keyframes-hide-to-opacity: 0;
 $color-basic-main: #000000;
 $color-basic-light: #78909c;
 $color-basic-lighter: #f5f5f5;
@@ -141,7 +144,7 @@ $container-736: 736px;
 $container-1152: 1152px;
 $container-full: 100%;
 $container-aside: 184px;
-$font-family-sans: Inter, sans-serif;
+$font-family-sans: 'Inter', sans-serif;
 $font-decoration-none: none;
 $font-decoration-underline: underline;
 $font-decoration-strike: line-through;
@@ -327,10 +330,33 @@ $stroke-1: 1px;
 $stroke-2: 2px;
 $stroke-4: 4px;
 
-@mixin transition {
-  transition-property: $amination-transition-transition-property;
-  transition-timing-function: $amination-transition-transition-timing-function;
-  transition-duration: $amination-transition-transition-duration;
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(show) {
+  from {
+    opacity: $keyframes-show-from-opacity;
+  }
+  to {
+    opacity: $keyframes-show-to-opacity;
+  }
+}
+@include keyframes(hide) {
+  from {
+    opacity: $keyframes-hide-from-opacity;
+  }
+  to {
+    opacity: $keyframes-hide-to-opacity;
+  }
 }
 @mixin h64 {
   font-size: $font-h64-font-size;

@@ -37,7 +37,7 @@ npm install pbstyles
 
 | Mixin       | CSS | LESS | SCSS | Tailwind Theme |
 | :---------- | :-- | :--- | :--- | :------------- |
-| Animation   | -   | +    | +    | -              |
+| Animation   | -   | +    | +    | +              |
 | Typography  | -   | +    | +    | +              |
 | Breakpoints | -   | +    | +    | +              |
 
@@ -68,21 +68,11 @@ Package contains [basic set of SCSS variables and mixins](https://github.com/pro
 @import 'pbstyles/styles/scss';
 ```
 
-### Tailwind Theme
+### Tailwind Theme version 4
 
-Package contains [Tailwind Theme](https://github.com/prosazhin/pbstyles/blob/main/styles/tailwind-theme/index.js).
+Package contains [Tailwind Theme](https://github.com/prosazhin/pbstyles/blob/main/styles/tailwind/theme.css).
 
-```javascript
-const theme = require('pbstyles/styles/tailwind-theme');
-
-module.exports = {
-  ...
-  theme: {
-    ...theme,
-    extend: {
-      ...theme.extend,
-    },
-  },
-  ...
-};
+```css
+@import 'tailwindcss';
+@import 'pbstyles/styles/tailwind/theme.css';
 ```

@@ -1,7 +1,7 @@
 {
   "font": {
     "family": {
-      "sans": { "value": "Inter, sans-serif" }
+      "sans": { "value": "'Inter', sans-serif" }
     },
     "decoration": {
       "none": { "value": "none" },

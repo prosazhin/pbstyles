@@ -1,17 +1,39 @@
 {
-  "amination": {
-    "transition": {
-      "transition-property": {
-        "value": "all",
-        "mixin": "transition"
+  "animation": {
+    "show": {
+      "value": "show 300ms ease-in forwards"
+    },
+    "hide": {
+      "value": "hide 200ms ease-out forwards"
+    }
+  },
+  "keyframes": {
+    "show": {
+      "from": {
+        "opacity": {
+          "value": 0,
+          "mixin": "show"
+        }
       },
-      "transition-timing-function": {
-        "value": "ease-in-out",
-        "mixin": "transition"
+      "to": {
+        "opacity": {
+          "value": 1,
+          "mixin": "show"
+        }
+      }
+    },
+    "hide": {
+      "from": {
+        "opacity": {
+          "value": 1,
+          "mixin": "hide"
+        }
       },
-      "transition-duration": {
-        "value": "150ms",
-        "mixin": "transition"
+      "to": {
+        "opacity": {
+          "value": 0,
+          "mixin": "hide"
+        }
       }
     }
   }
