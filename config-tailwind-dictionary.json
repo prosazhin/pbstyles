@@ -8,7 +8,7 @@
     "leading": "font/leading",
     "text": "font/size",
     "color": "color",
-    "spacing": "1",
+    "spacing": "1px",
     "radius": "rounded",
     "shadow": "shadow",
     "breakpoint": "screen",
