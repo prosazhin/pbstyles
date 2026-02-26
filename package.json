@@ -28,7 +28,7 @@
     "url": "https://github.com/prosazhin/pbstyles.git"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.22.0"
   },
   "files": [
     "styles",
@@ -60,13 +60,13 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "eslint": "^9.39.1",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
-    "lint-staged": "^16.2.6",
+    "lint-staged": "^16.2.7",
     "mixin-dictionary": "^1.2.2",
-    "prettier": "^3.6.2",
+    "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1",
     "tailwind-dictionary": "^2.0.2"
   }
