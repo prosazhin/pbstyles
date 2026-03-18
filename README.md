@@ -11,9 +11,9 @@ For generating styles, design tokens are used based on the [Style Dictionary](ht
 ## Installation
 
 ```bash
-yarn add pbstyles
+yarn add @prosazhin/pbstyles
 # or
-npm install pbstyles
+npm install @prosazhin/pbstyles
 ```
 
 ## Includes
@@ -49,7 +49,7 @@ Package contains only a [basic set of variables](https://github.com/prosazhin/pb
 At the moment, CSS does not yet have the ability to use mixins.
 
 ```css
-@import 'pbstyles/styles/css';
+@import '@prosazhin/pbstyles/styles/css';
 ```
 
 ### LESS
@@ -57,7 +57,7 @@ At the moment, CSS does not yet have the ability to use mixins.
 Package contains [basic set of LESS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/less/index.less).
 
 ```less
-@import 'pbstyles/styles/less';
+@import '@prosazhin/pbstyles/styles/less';
 ```
 
 ### SCSS
@@ -65,7 +65,7 @@ Package contains [basic set of LESS variables and mixins](https://github.com/pro
 Package contains [basic set of SCSS variables and mixins](https://github.com/prosazhin/pbstyles/blob/main/styles/scss/index.scss).
 
 ```scss
-@import 'pbstyles/styles/scss';
+@import '@prosazhin/pbstyles/styles/scss';
 ```
 
 ### Tailwind Theme version 4
@@ -74,5 +74,5 @@ Package contains [Tailwind Theme](https://github.com/prosazhin/pbstyles/blob/mai
 
 ```css
 @import 'tailwindcss';
-@import 'pbstyles/styles/tailwind/theme.css';
+@import '@prosazhin/pbstyles/styles/tailwind/theme.css';
 ```

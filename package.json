@@ -1,6 +1,6 @@
 {
-  "name": "pbstyles",
-  "version": "3.0.3",
+  "name": "@prosazhin/pbstyles",
+  "version": "1.0.0",
   "description": "Basic styles for quick prototyping",
   "license": "MIT",
   "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.ru)",
