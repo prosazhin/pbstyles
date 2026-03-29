@@ -60,11 +60,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.4.2",
-    "@commitlint/config-conventional": "^20.4.2",
-    "eslint": "^10.0.2",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^16.4.0",
     "mixin-dictionary": "^1.2.2",
     "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1",
