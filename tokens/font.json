@@ -21,7 +21,8 @@
       "20": { "value": "{size.20}" },
       "16": { "value": "{size.16}" },
       "14": { "value": "{size.14}" },
-      "12": { "value": "{size.12}" }
+      "12": { "value": "{size.12}" },
+      "10": { "value": "{size.10}" }
     },
     "leading": {
       "none": { "value": 1 },
@@ -278,6 +279,34 @@
       "font-weight": {
         "value": "{font.weight.medium}",
         "mixin": "tm12"
+      }
+    },
+    "t10": {
+      "font-size": {
+        "value": "{font.size.10}",
+        "mixin": "t10"
+      },
+      "line-height": {
+        "value": "{font.leading.normal}",
+        "mixin": "t10"
+      },
+      "font-weight": {
+        "value": "{font.weight.regular}",
+        "mixin": "t10"
+      }
+    },
+    "tm10": {
+      "font-size": {
+        "value": "{font.size.10}",
+        "mixin": "tm10"
+      },
+      "line-height": {
+        "value": "{font.leading.normal}",
+        "mixin": "tm10"
+      },
+      "font-weight": {
+        "value": "{font.weight.medium}",
+        "mixin": "tm10"
       }
     }
   }

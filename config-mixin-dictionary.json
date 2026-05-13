@@ -1,6 +1,10 @@
 {
   "platforms": ["css", "less", "scss"],
-  "source": ["tokens/**/*.json"],
+  "source": ["tokens/*.json"],
+  "themes": {
+    "light": ["tokens/themes/light.json"],
+    "dark": ["tokens/themes/dark.json"]
+  },
   "output": "./styles",
   "mediaAliases": ["screen", "breakpoint"],
   "keyframesAliases": ["keyframes"]

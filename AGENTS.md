@@ -7,9 +7,28 @@
 ## Контекст проекта
 
 - npm-пакет: `@prosazhin/pbstyles`
-- Текущая версия: смотреть в `package.json`
+- Текущая версия: см. поле `version` в `package.json`
 - Основная цель: генерация и поставка базовых стилей/токенов (`styles/*`)
-- Сборка: `npm run build`
+- Сборка: `npm run build` (последовательно запускает `mixin-dictionary`, `tailwind-dictionary`, `prettier`)
+
+### Структура токенов
+
+Исходные данные — JSON-файлы в `tokens/`:
+
+- `tokens/*.json` — базовые токены (font, palette, shadow, size, rounded, screen, opacity, stroke, column, container, animation)
+- `tokens/themes/light.json`, `tokens/themes/dark.json` — цветовые темы (светлая/тёмная)
+
+### Структура стилей (генерируется, не редактировать вручную)
+
+- `styles/css/` — CSS-переменные
+- `styles/less/` — LESS-переменные и миксины
+- `styles/scss/` — SCSS-переменные и миксины
+- `styles/tailwind/theme.css` — Tailwind v4 тема
+
+### Конфиги сборки
+
+- `config-mixin-dictionary.json` — настройки для `mixin-dictionary` (платформы: css, less, scss)
+- `config-tailwind-dictionary.json` — настройки для `tailwind-dictionary` (версия 4, маппинг алиасов тем)
 
 ## Базовые правила изменений
 
@@ -18,6 +37,7 @@
 3. Любые изменения в `package.json` (имя, версия, scripts, publishConfig) синхронизировать с `package-lock.json`.
 4. После изменения зависимостей обновлять lockfile и проверять `npm audit`.
 5. Не редактировать `node_modules`.
+6. Файлы в `styles/` генерируются автоматически — вносить изменения только в `tokens/*.json` и конфиги сборки, затем пересобирать.
 
 ## Что проверять перед завершением задачи
 

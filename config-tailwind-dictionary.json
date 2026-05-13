@@ -1,6 +1,10 @@
 {
   "version": 4,
-  "source": ["tokens/**/*.json"],
+  "source": ["tokens/*.json"],
+  "themes": {
+    "light": ["tokens/themes/light.json"],
+    "dark": ["tokens/themes/dark.json"]
+  },
   "output": "./styles",
   "themeAliases": {
     "font": "font/family",
