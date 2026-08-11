@@ -53,19 +53,17 @@
 
 Файлы релиза:
 
-- `.github/workflows/prepare.yml`
+- `.github/workflows/ci.yml`
 - `.github/workflows/release.yml`
 - `package.json`
 
 При изменениях релизного контура проверять:
 
 1. Имя пакета везде одинаково: `@prosazhin/pbstyles`
-2. `prepare.yml` сравнивает версию в `package.json` с предыдущим коммитом (`HEAD~1`)
-3. Тег релиза имеет формат `@prosazhin/pbstyles@v<version>`
+2. `release.yml` сравнивает версию в `package.json` с опубликованной в npm (`npm view`)
+3. Тег релиза имеет формат `@prosazhin/pbstyles@v<version>` и создаётся самим `softprops/action-gh-release`
 4. `release.yml` публикует с `--access public`
-5. Используемые секреты:
-   - `NPM_TOKEN`
-   - `ACCESS_TOKEN`
+5. Используемые секреты: `NPM_TOKEN`
 
 ## Ограничения по стилю правок
 

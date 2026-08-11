@@ -42,11 +42,15 @@ config-tailwind-dictionary.json # конфиг для tailwind v4
 
 ## Релиз
 
-Релизный контур — GitHub Actions:
+Релиз делается одним шагом — пушем в `main`. Всё в одном workflow `.github/workflows/release.yml`:
 
-- `.github/workflows/prepare.yml` — сравнивает версию с `HEAD~1`, создаёт тег `@prosazhin/pbstyles@v<version>`
-- `.github/workflows/release.yml` — публикует пакет с `--access public`
+- job `gate` — читает версию из `package.json` и спрашивает npm, опубликована ли она; если да — workflow тихо останавливается
+- job `release` — `npm ci` → `npm run lint` → `npm run build` → `npm publish --provenance --access public`, затем создаёт тег и GitHub Release
 
-Секреты: `NPM_TOKEN`, `ACCESS_TOKEN`.
+Проверка идёт против npm, а не против предыдущего коммита, поэтому повторный push или ре-ран workflow не приводят к повторной публикации.
+
+`.github/workflows/ci.yml` гоняет lint + build на pull request в `main`.
+
+Секреты: `NPM_TOKEN` (тег и релиз создаются штатным `GITHUB_TOKEN` с правами `contents: write`).
 
 Формат тега: `@prosazhin/pbstyles@v1.0.0`.
