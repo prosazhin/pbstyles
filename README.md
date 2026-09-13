@@ -88,14 +88,15 @@ The dark theme is enabled in two ways:
 - **System** — automatically via `@media (prefers-color-scheme: dark)`.
 - **Manual** — with the `data-theme="dark"` attribute on `<html>` or on any container. Nested containers work too: everything inside `<div data-theme="dark">` uses dark colors.
 
+`data-theme="light"` works the same way in the opposite direction: it forces the light theme even when the system prefers dark, on `<html>` or on any nested container.
+
 ```html
 <html data-theme="dark">
   ...
   <div data-theme="dark">This block is always dark</div>
+  <div data-theme="light">This block is always light</div>
 </html>
 ```
-
-There is no `data-theme="light"` override: a manual value is only needed to force the dark theme.
 
 ### Overriding tokens
 

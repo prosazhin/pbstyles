@@ -41,7 +41,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --theme-color-basic-0: #0f172a;
     --theme-color-basic-50: #1e293b;
     --theme-color-basic-100: #334155;
@@ -124,6 +124,48 @@
   --theme-color-text-primary: #ffffff;
   --theme-color-text-secondary: #94a3b8;
   --theme-color-text-contrast: #0f172a;
+}
+
+[data-theme='light'] {
+  --theme-color-basic-0: #ffffff;
+  --theme-color-basic-50: #fafafa;
+  --theme-color-basic-100: #f5f5f5;
+  --theme-color-basic-200: #e5e5e5;
+  --theme-color-basic-300: #64748b;
+  --theme-color-basic-400: #0f172a;
+  --theme-color-primary-50: #eff6ff;
+  --theme-color-primary-100: #dbeafe;
+  --theme-color-primary-200: #bfdbfe;
+  --theme-color-primary-300: #2563eb;
+  --theme-color-primary-400: #1d4ed8;
+  --theme-color-secondary-50: #f8fafc;
+  --theme-color-secondary-100: #f1f5f9;
+  --theme-color-secondary-200: #e2e8f0;
+  --theme-color-secondary-300: #334155;
+  --theme-color-secondary-400: #1e293b;
+  --theme-color-success-50: #f0fdf4;
+  --theme-color-success-100: #dcfce7;
+  --theme-color-success-200: #bbf7d0;
+  --theme-color-success-300: #16a34a;
+  --theme-color-success-400: #15803d;
+  --theme-color-danger-50: #fef2f2;
+  --theme-color-danger-100: #fee2e2;
+  --theme-color-danger-200: #fecaca;
+  --theme-color-danger-300: #dc2626;
+  --theme-color-danger-400: #b91c1c;
+  --theme-color-warning-50: #fff7ed;
+  --theme-color-warning-100: #ffedd5;
+  --theme-color-warning-200: #fed7aa;
+  --theme-color-warning-300: #f97316;
+  --theme-color-warning-400: #ea580c;
+  --theme-color-outline-primary: #93c5fd;
+  --theme-color-outline-secondary: #d4d4d4;
+  --theme-color-outline-success: #86efac;
+  --theme-color-outline-danger: #fca5a5;
+  --theme-color-outline-warning: #fdba74;
+  --theme-color-text-primary: #0f172a;
+  --theme-color-text-secondary: #64748b;
+  --theme-color-text-contrast: #ffffff;
 }
 
 @theme {
