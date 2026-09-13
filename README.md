@@ -76,3 +76,49 @@ Package contains [Tailwind Theme](https://github.com/prosazhin/pbstyles/blob/mai
 @import 'tailwindcss';
 @import '@prosazhin/pbstyles/styles/tailwind/theme.css';
 ```
+
+The theme also works with a [Tailwind prefix](https://tailwindcss.com/docs/styling-with-utility-classes#using-the-prefix-option), e.g. `@import 'tailwindcss' prefix(tw);` — the dark theme and token overrides keep working.
+
+## Dark theme
+
+Semantic colors (`basic`, `primary`, `secondary`, `success`, `danger`, `warning`, `outline`, `text`) have light and dark values. The color palette (`gray`, `blue`, etc.) is the same in both themes.
+
+The dark theme is enabled in two ways:
+
+- **System** — automatically via `@media (prefers-color-scheme: dark)`.
+- **Manual** — with the `data-theme="dark"` attribute on `<html>` or on any container. Nested containers work too: everything inside `<div data-theme="dark">` uses dark colors.
+
+```html
+<html data-theme="dark">
+  ...
+  <div data-theme="dark">This block is always dark</div>
+</html>
+```
+
+There is no `data-theme="light"` override: a manual value is only needed to force the dark theme.
+
+### Overriding tokens
+
+Semantic colors are plain CSS variables, so any of them can be overridden with a regular cascade rule — on `:root`, inside `[data-theme='dark']` or on a specific element. In the Tailwind Theme they have their own `--theme-color-*` names, which do not depend on the Tailwind prefix.
+
+| Format         | Variable name                                             |
+| :------------- | :-------------------------------------------------------- |
+| CSS            | `--color-basic-0`, `--color-primary-300`, ...             |
+| LESS           | `@color-basic-0` → `var(--color-basic-0)`                 |
+| SCSS           | `$color-basic-0` → `var(--color-basic-0)`                 |
+| Tailwind Theme | `--theme-color-basic-0`, `--theme-color-primary-300`, ... |
+
+In the Tailwind Theme semantic colors are declared as `--theme-color-*` variables outside `@theme` and mapped via `@theme inline` (`--color-basic-0: var(--theme-color-basic-0)`). Utilities like `bg-basic-0` compile to `var(--theme-color-basic-0)` directly, so the override works at any DOM level and with any Tailwind prefix:
+
+```css
+@import 'tailwindcss';
+@import '@prosazhin/pbstyles/styles/tailwind/theme.css';
+
+:root {
+  --theme-color-primary-300: #7c3aed;
+}
+
+[data-theme='dark'] {
+  --theme-color-primary-300: #a78bfa;
+}
+```

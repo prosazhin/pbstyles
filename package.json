@@ -1,6 +1,6 @@
 {
   "name": "@prosazhin/pbstyles",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Basic styles for quick prototyping",
   "license": "MIT",
   "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.ru)",
@@ -75,6 +75,6 @@
     "mixin-dictionary": "^1.3.1",
     "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1",
-    "tailwind-dictionary": "^2.1.2"
+    "tailwind-dictionary": "^2.2.0"
   }
 }
