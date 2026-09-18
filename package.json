@@ -1,9 +1,9 @@
 {
   "name": "@prosazhin/pbstyles",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Basic styles for quick prototyping",
   "license": "MIT",
-  "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.ru)",
+  "author": "Evgenii Sazhin <prosazhin@gmail.com> (https://prosazhin.dev)",
   "keywords": [
     "style",
     "css",
@@ -72,9 +72,9 @@
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "lint-staged": "^16.4.0",
-    "mixin-dictionary": "^1.4.0",
+    "mixin-dictionary": "^1.4.2",
     "prettier": "^3.8.1",
     "simple-git-hooks": "^2.13.1",
-    "tailwind-dictionary": "^2.3.0"
+    "tailwind-dictionary": "^2.3.2"
   }
 }

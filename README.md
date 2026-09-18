@@ -1,5 +1,7 @@
 # pbstyles
 
+[Documentation](https://prosazhin.dev/docs/pbstyles)
+
 [Figma community](https://www.figma.com/community/file/1213609862805339771/pbstyles) | [Behance](https://www.behance.net/gallery/162935391/pbstyles)
 
 ## prosazhin basic styles
