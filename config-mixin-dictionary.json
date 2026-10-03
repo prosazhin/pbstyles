@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/mixin-dictionary/schema/config.schema.json",
   "platforms": ["css", "less", "scss"],
   "source": ["tokens/*.json"],
   "themes": {

@@ -8,7 +8,14 @@
 
 Basic styles for quick prototyping. Includes typography, semantic colors, color palette, basic sizes, containers and columns, breakpoints, border sizes, rounding, opacity, and shadows.
 
-For generating styles, design tokens are used based on the [Style Dictionary](https://github.com/amzn/style-dictionary) package documentation, but extended with mixins thanks to the [Mixin Dictionary](https://github.com/prosazhin/mixin-dictionary) package. For generating a Tailwind Theme, the [Tailwind Dictionary](https://github.com/prosazhin/tailwind-dictionary) package is used.
+## Design tokens
+
+The styles are generated from [design tokens](https://github.com/prosazhin/pbstyles/tree/main/tokens) in the [W3C Design Tokens (DTCG 2025.10)](https://www.designtokens.org/tr/2025.10/format/) format with [Style Dictionary](https://github.com/style-dictionary/style-dictionary): CSS, LESS and SCSS variables and mixins — with the [Mixin Dictionary](https://github.com/prosazhin/mixin-dictionary) package, the Tailwind Theme — with the [Tailwind Dictionary](https://github.com/prosazhin/tailwind-dictionary) package.
+
+- Text styles are composite `typography` tokens with `fontSize`, `lineHeight` and `fontWeight`: the font family and letter spacing are inherited.
+- Breakpoints (`screen.<name>.{min,max}`) and animations (`keyframes.<name>.<frame>.<property>`) become mixins by their structure.
+- `container.full` (`100%`), animations and text decorations are plain string tokens: DTCG has no matching type for them.
+- Since 1.4.0 the tokens use DTCG instead of the legacy Style Dictionary format. The generated styles are the same as in 1.3.1.
 
 ## Installation
 

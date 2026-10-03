@@ -1,8 +1,8 @@
 {
   "container": {
-    "full": { "value": "100%" },
-    "1152": { "value": "1152px" },
-    "736": { "value": "736px" },
-    "aside": { "value": "184px" }
+    "736": { "$type": "dimension", "$value": { "value": 736, "unit": "px" } },
+    "1152": { "$type": "dimension", "$value": { "value": 1152, "unit": "px" } },
+    "full": { "$value": "100%" },
+    "aside": { "$type": "dimension", "$value": { "value": 184, "unit": "px" } }
   }
 }

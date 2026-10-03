@@ -13,10 +13,18 @@
 
 ### Структура токенов
 
-Исходные данные — JSON-файлы в `tokens/`:
+Исходные данные — JSON-файлы в `tokens/` в формате DTCG 2025.10 (`$value`, `$type`):
 
 - `tokens/*.json` — базовые токены (font, palette, shadow, size, rounded, screen, opacity, stroke, column, container, animation)
 - `tokens/themes/light.json`, `tokens/themes/dark.json` — цветовые темы (светлая/тёмная)
+
+Правила формата:
+
+- `$type` задаётся на уровне группы (`color`, `dimension`, `number`, `fontWeight`, `fontFamily`, `shadow`);
+- `dimension` и `color` — объектная форма (`{ "value": 16, "unit": "px" }`, `{ "colorSpace": "srgb", "components": [...], "hex": "#..." }`);
+- стили текста (`font.h64` и т. д.) — составной `$type: typography` с `fontSize`, `lineHeight`, `fontWeight`; поле `mixin` не используется;
+- брейкпоинты (`screen.<name>.{min,max}`) и keyframes (`keyframes.<name>.<frame>.<prop>`) группируются по структуре;
+- `container.full` (`100%`), `animation.*`, `font.decoration.*` — строковые токены без `$type` (в DTCG нет подходящего типа).
 
 ### Структура стилей (генерируется, не редактировать вручную)
 
@@ -43,7 +51,7 @@
 
 Минимальный чек:
 
-1. `npm run build`
+1. `npm run build` — если токены менялись без цели изменить стили, `git diff styles/` должен быть пустым
 2. `git diff --name-only` и ручная проверка измененных файлов
 3. Если менялись зависимости: `npm audit`
 

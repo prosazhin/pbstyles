@@ -19,7 +19,7 @@ npm run format         # prettier --write styles
 ## Структура
 
 ```
-tokens/           # исходные дизайн-токены (JSON) — редактировать здесь
+tokens/           # исходные дизайн-токены (JSON, DTCG 2025.10) — редактировать здесь
   *.json          # базовые токены: font, palette, shadow, size, rounded, screen, opacity, stroke, column, container, animation
   themes/
     light.json    # светлая цветовая тема
@@ -39,6 +39,8 @@ config-tailwind-dictionary.json # конфиг для tailwind v4
 - Не трогать `styles/` напрямую — изменения перезапишутся при следующей сборке.
 - Узкие, целевые правки — без массовых переименований и ненужного рефакторинга.
 - После изменения `package.json` синхронизировать `package-lock.json` (`npm install`).
+- Токены — в формате DTCG (`$value`, `$type`); старый формат `value` + `mixin` в одном наборе с DTCG смешивать нельзя.
+- Перед завершением задачи: `npm run build` (битые ссылки и ошибки формата токенов останавливают сборку с путём токена и файлом).
 
 ## Релиз
 
@@ -49,7 +51,7 @@ config-tailwind-dictionary.json # конфиг для tailwind v4
 
 Проверка идёт против npm, а не против предыдущего коммита, поэтому повторный push или ре-ран workflow не приводят к повторной публикации.
 
-`.github/workflows/ci.yml` гоняет lint + build на pull request в `main`.
+`.github/workflows/ci.yml` гоняет lint + build на pull request в `main` и проверяет, что закоммиченный `styles/` совпадает со сборкой (`git diff --exit-code styles/`).
 
 Секреты: `NPM_TOKEN` (тег и релиз создаются штатным `GITHUB_TOKEN` с правами `contents: write`).
 

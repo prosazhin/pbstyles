@@ -29,3 +29,6 @@ jobs:
       - run: npm ci --no-fund --no-audit
       - run: npm run lint
       - run: npm run build
+      # Закоммиченные стили должны совпадать с тем, что собирается из токенов.
+      - name: Check that styles are up to date
+        run: git diff --exit-code styles/
